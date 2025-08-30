@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course - Landing Page</title>
+  <link rel="stylesheet" href="Task1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+ 
+  <header>
+    <div class="logo">BRAINBOOST</div>
+    <nav>
+      <a href="#page1">Home</a>
+      <a href="#about">About</a>
+      <a href="#course">Course</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+  </header>
+
+ 
+  <section id="page1"class="hero">
+    <div class="hero-content">
+      <h1>Enhance your skills in our website</h1>
+      <h3>Join our courses today and unlock new skills for your future</h3>
+      <button id="cta-btn">Get Started Now</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/8521/8521795.png" alt="image">
+    </div>
+  </section>
+
+  
+  <section id="features" class="features">
+    <h2>Why to Choose Brainboost?</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Smart Tracking</h3>
+        <p>Monitor your daily learning and improve yourself.</p>
+      </div>
+      <div class="card">
+        <h3>Easy learning</h3>
+        <p>Easy to understand any concpts and study new things.</p>
+      </div>
+      <div class="card">
+        <h3>Certification</h3>
+        <p>Once you complete your course you are provide with certificate.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="about">
+  <div class="about-container">
+    <h2>About Us</h2>
+    <p>
+      Our course is designed for anyone eager to grow and upgrade their skills. <br>
+      With easy-to-follow lessons, practical examples, and expert guidance, <br>
+      you’ll gain the knowledge and confidence to achieve your goals. <br>
+      Start your journey today and learn in a way that’s simple, effective, and exciting!
+    </p>
+  </div>
+</section>
+
+
+   <section id="course" class="course-section">
+  <h2>Our Courses</h2>
+  <div class="course-slider">
+    <div class="course-track">
+      <div class="course-card">
+        <h2>Web Development</h2>
+        <p>Learn to build modern websites with HTML, CSS, and JavaScript.</p>
+        <button onclick="openForm('Web Development')">Register</button>
+      </div>
+      <div class="course-card">
+        <h2>Python Programming</h2>
+        <p>Master Python from basics to advanced concepts with projects.</p>
+        <button onclick="openForm('Python Programming')">Register</button>
+      </div>
+      <div class="course-card">
+        <h2>Data Science</h2>
+        <p>Analyze data, build models, and uncover insights with ease.</p>
+        <button onclick="openForm('Data Science')">Register</button>
+      </div>
+      <div class="course-card">
+        <h2>UI/UX Design</h2>
+        <p>Design user-friendly interfaces that look and feel amazing.</p>
+        <button onclick="openForm('UI/UX Design')">Register</button>
+      </div>
+      <div class="course-card">
+        <h2>java Programming</h2>
+        <p>Master java from basics to advanced concepts with projects.</p>
+        <button onclick="openForm('Python Programming')">Register</button>
+      </div>
+      <div class="course-card">
+        <h2>Cyber Security</h2>
+        <p>Protect systems and networks with essential security skills.</p>
+        <button onclick="openForm('Cyber Security')">Register</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+  <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+</section>
+
+
+  
+  <div id="popupForm" class="form-popup">
+    <div class="form-container">
+      <span class="close-btn" onclick="closeForm()">×</span>
+      <h2 id="courseName">Register</h2>
+      <form id="registerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="occupation">Occupation:</label>
+        <select id="occupation" required>
+          <option value="">-- Select --</option>
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>IT Professional</option>
+        </select>
+
+        <label for="reason">Reason for studying:</label>
+        <textarea id="reason" rows="3" required></textarea>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+
+
+  
+  <section id="contact" class="contact">
+    <h2>Stay Updated</h2>
+    <p>Sign up for exclusive updates and offers.</p>
+    <input type="email" id="email" placeholder="Enter your email">
+    <button onclick="subscribe()">Subscribe</button>
+  </section>
+
+
+  <footer class="footer">
+  <div class="footer-container">
+    
+    
+    <div class="footer-section">
+      <h3>BRAINBOOST</h3>
+      <p>Empowering learners with knowledge and skills to achieve success. 
+         Join us and start your journey today!</p>
+    </div>
+
+    
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#page1">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#course">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: support@brainboost.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Address: Chennai, India</p>
+    </div>
+
+    
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 BRAINBOOST. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="Task1.js"></script>
+</body>
+</html>
